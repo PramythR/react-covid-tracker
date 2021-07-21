@@ -3,8 +3,10 @@ import { Line } from "react-chartjs-2";
 import numeral from "numeral";
 
 const options = {
-  legend: {
-    display: false,
+   plugins: {
+    legend: {
+      display: false,
+    },
   },
   elements: {
     point: {
@@ -93,6 +95,7 @@ function LineGraph({ casesType }) {
                 backgroundColor: "rgba(204, 16, 52, 0.5)",
                 borderColor: "#CC1034",
                 data: data,
+                fill: true,
               },
             ],
           }}
